@@ -1,2 +1,2 @@
-1000 PRINT CHR$(137)
-1010 PRINT "RECHENTRAINER"
+1000 print chr$(147);
+1010 print "rechentrainer";
