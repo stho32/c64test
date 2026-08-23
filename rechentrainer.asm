@@ -7,13 +7,14 @@
 
 .const CHROUT  = $ffd2          // KERNAL: Zeichen aus A ausgeben
 .const CLR     = 147            // PETSCII: Bildschirm loeschen
-.const ZP_TEXT = $fb            // Zeiger auf den auszugebenden Text ($fb/$fc)
+.const ZP_TEXT = $fb          // Zeiger auf den auszugebenden Text ($fb/$fc)
 
 BasicUpstart2(start)
 
 * = $0810 "Hauptprogramm"
 
 start:
+    jsr sid_init
     jsr bildschirm_loeschen
     lda #<text                  // Lo-Byte der Textadresse
     ldy #>text                  // Hi-Byte der Textadresse
@@ -45,6 +46,8 @@ text_ausgeben_schleife:
     bne text_ausgeben_schleife
 text_ausgeben_ende:
     rts
+
+.import source "zufall.asm"
 
 text:
     .text "RECHENTRAINER"
