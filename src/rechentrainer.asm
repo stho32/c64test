@@ -15,6 +15,9 @@ start:
     lda #<text                  // Lo-Byte der Textadresse
     ldy #>text                  // Hi-Byte der Textadresse
     jsr text_ausgeben
+    lda #100                    // Obergrenze
+    jsr zufallszahl
+    jsr zahl_ausgeben
 ende:
     rts                         // zurueck zum BASIC
 
