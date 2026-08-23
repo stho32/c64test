@@ -23,6 +23,7 @@ src/asm/        frueherer Assembler-Stand, per SYS nachnutzbar
 build/          erzeugte PRG-Dateien (nicht versioniert)
 build.sh        baut die BASIC-Fassung mit petcat
 build-asm.sh    baut die Assembler-Fassung mit Kick Assembler
+mache-d64.sh    packt das PRG in ein Diskettenabbild
 run.sh          baut und startet das Ergebnis in VICE
 ```
 
@@ -32,10 +33,14 @@ run.sh          baut und startet das Ergebnis in VICE
 |---|---|
 | `petcat` (Teil von VICE) | wandelt BASIC-Text in ein startfaehiges PRG |
 | `x64sc` (VICE) | Emulator zum Ausprobieren |
+| `c1541` (Teil von VICE) | packt das PRG in ein D64-Diskettenabbild |
 | `kickass` | Kick Assembler, nur fuer `src/asm/` |
 
 BASIC wird als gewoehnliche Textdatei geschrieben und versioniert — nicht im
 Emulator abgetippt. `petcat -w2` erzeugt daraus das PRG.
+
+Jeder Build legt zusaetzlich ein D64 an. VICE startet daraus, damit der Weg
+derselbe ist wie auf echter Hardware: Diskette einlegen, Programm laden.
 
 ## Bauen und starten
 

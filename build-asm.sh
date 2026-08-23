@@ -4,3 +4,4 @@ set -e
 cd "$(dirname "$0")"
 mkdir -p build
 kickass -odir "$PWD/build" -libdir src/asm src/asm/rechentrainer.asm
+./mache-d64.sh

@@ -16,4 +16,4 @@ env -i \
     XAUTHORITY="${XAUTHORITY:-$HOME/.Xauthority}" \
     XDG_RUNTIME_DIR="$XDG_RUNTIME_DIR" \
     XDG_DATA_HOME="$HOME/.local/share" \
-    x64sc -autostart build/rechentrainer.prg
+    x64sc -autostart build/rechentrainer.d64
