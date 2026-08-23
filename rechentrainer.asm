@@ -47,5 +47,5 @@ text_ausgeben_ende:
     rts
 
 text:
-    .text "HELLO WORLD"
+    .text "RECHENTRAINER"
     .byte 13, 0
