@@ -1,3 +1,23 @@
+100 print chr$(147);
+110 print
+120 for i = 1 to 11
+130 read a$
+140 print a$
+150 next i
+160 restore
+170 end
+200 rem anfuehrungszeichen noetig: sonst frisst basic die fuehrenden leerzeichen
+210 data "        ### ### ### # # ### # #"
+220 data "        # # #   #   # # #   ###"
+230 data "        ### ### #   ### ### ###"
+240 data "        ##  #   #   # # #   # #"
+250 data "        # # ### ### # # ### # #"
+260 data ""
+270 data "      ### ### ### ### # # ### ###"
+280 data "       #  # # # #  #  ### #   # #"
+290 data "       #  ### ###  #  ### ### ###"
+300 data "       #  ##  # #  #  # # #   ## "
+310 data "       #  # # # # ### # # ### # #"
 1000 print chr$(147);
 1010 print "rechentrainer"
 1020 a=int(rnd(1)*10)+1
