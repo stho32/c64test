@@ -28,7 +28,11 @@
 330 poke 55873+i, c+8
 340 next i
 350 get k$
-360 if k$ <> "" then 1000
+360 if k$ = "" then 370
+362 rem zufallsfolge mit der wartezeit bis zum tastendruck saeen -
+364 rem ti ist beim autostart immer aehnlich, der tastendruck nicht
+366 x = rnd(-ti)
+368 goto 1000
 370 for d = 1 to 60
 380 next d
 390 p = p + 1
