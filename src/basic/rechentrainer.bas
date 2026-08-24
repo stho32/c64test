@@ -16,6 +16,10 @@
 250 print
 260 print "                 start"
 270 rem 55873 = farb-ram der ersten start-zelle (zeile 14, spalte 17)
+275 rem tastaturpuffer leeren: sonst reisst ein rest-tastendruck aus dem
+276 rem uebungsmodus den startbildschirm sofort wieder weg
+277 get k$
+278 if k$ <> "" then 277
 280 p = 0
 290 rem farbverlauf: jede der 5 zellen bekommt eine um p verschobene helle farbe
 300 for i = 0 to 4
