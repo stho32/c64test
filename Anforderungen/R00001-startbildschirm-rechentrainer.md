@@ -29,31 +29,31 @@ Als Spieler will ich nach 5 gelösten Aufgaben zurück zum Startbildschirm komme
 ## Akzeptanzkriterien
 
 ### Darstellung
-- [ ] "RECHENTRAINER" erscheint als mehrzeilige Blockschrift, zweizeilig gesetzt ("RECHEN" über "TRAINER")
-- [ ] "START" erscheint darunter, gut lesbar abgesetzt vom Titel
-- [ ] Rahmen und Bildschirmhintergrund sind fest schwarz
-- [ ] Der Titel ist weiß eingefärbt und damit vor dem schwarzen Grund lesbar
-- [ ] "START"-Text durchläuft einen sichtbaren, fortlaufenden Farbverlauf
+- [x] "RECHENTRAINER" erscheint als mehrzeilige Blockschrift, zweizeilig gesetzt ("RECHEN" über "TRAINER")
+- [x] "START" erscheint darunter, gut lesbar abgesetzt vom Titel
+- [x] Rahmen und Bildschirmhintergrund sind fest schwarz
+- [x] Der Titel ist weiß eingefärbt und damit vor dem schwarzen Grund lesbar
+- [x] "START"-Text durchläuft einen sichtbaren, fortlaufenden Farbverlauf
 
 ### Interaktion
-- [ ] Startbildschirm-Animation läuft in Endlosschleife, bis eine Taste gedrückt wird
-- [ ] Beliebiger Tastendruck beendet den Startbildschirm und startet den Übungsmodus
-- [ ] Übungsmodus (bestehende Rechenaufgaben-Logik) läuft danach unverändert weiter
-- [ ] Ein Tastendruck, der beim Betreten des Startbildschirms noch im Tastaturpuffer steht, beendet ihn nicht sofort
-- [ ] Die Aufgabenfolge unterscheidet sich zwischen zwei Programmläufen
+- [x] Startbildschirm-Animation läuft in Endlosschleife, bis eine Taste gedrückt wird
+- [x] Beliebiger Tastendruck beendet den Startbildschirm und startet den Übungsmodus
+- [x] Übungsmodus (bestehende Rechenaufgaben-Logik) läuft danach unverändert weiter
+- [x] Ein Tastendruck, der beim Betreten des Startbildschirms noch im Tastaturpuffer steht, beendet ihn nicht sofort
+- [x] Die Aufgabenfolge unterscheidet sich zwischen zwei Programmläufen
 
 ### Rückweg
-- [ ] Nach 5 korrekt gelösten Aufgaben in Folge kehrt das Programm zum Startbildschirm zurück
-- [ ] Der Aufgabenzähler wird beim Rücksprung zum Startbildschirm zurückgesetzt
+- [x] Nach 5 korrekt gelösten Aufgaben in Folge kehrt das Programm zum Startbildschirm zurück
+- [x] Der Aufgabenzähler wird beim Rücksprung zum Startbildschirm zurückgesetzt
 
 ### Technik
-- [ ] Umsetzung in reinem BASIC V2, kein Assembler/SYS
-- [ ] Farb- und Rahmen-/Hintergrundsteuerung über `POKE` (Farb-RAM 55296, Rahmen 53280, Hintergrund 53281)
-- [ ] Läuft auf echter C64-Hardware (keine undokumentierten Adressen)
+- [x] Umsetzung in reinem BASIC V2, kein Assembler/SYS
+- [x] Farb- und Rahmen-/Hintergrundsteuerung über `POKE` (Farb-RAM 55296, Rahmen 53280, Hintergrund 53281)
+- [x] Läuft auf echter C64-Hardware (keine undokumentierten Adressen)
 
 ## Status
 
-- [ ] Offen
+- [x] Erledigt
 
 ## Technische Details
 
