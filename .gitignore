@@ -1,2 +1,3 @@
 build/
 *.sym
+.claude/pair/wbs-*.html
