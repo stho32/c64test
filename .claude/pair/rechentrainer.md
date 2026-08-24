@@ -15,11 +15,11 @@ Status je Happen (siehe WBS-Datei fuer den Graph):
 |---|---|---|
 | A Zufallszahlen ziehen | gruen | Zeilen 1020/1030 |
 | B Aufgabe formatieren | gruen | Zeile 1040 |
-| C Antwort einlesen | bestehend | Zeile 1050, INPUT |
-| D Antwort pruefen | gelb | Zeile 1060 in Arbeit: `if c=a*b then 1100` |
-| E Erfolg melden | rot | ab Zeile 1100 |
-| F Fehler melden | rot | ab Zeile 1150 |
-| G naechste Aufgabe anstossen | rot | GOTO zurueck in die Schleife |
+| C Antwort einlesen | gruen | Zeile 1050, INPUT |
+| D Antwort pruefen | gruen | Zeile 1060: `if c=a*b then 1100`, sonst Fallthrough (Retry gleiche Aufgabe) |
+| E Erfolg melden | gruen | Zeile 1100/1110/1120 |
+| F Fehler melden | gruen | Zeile 1070/1080: Meldung + GOTO 1050 |
+| G naechste Aufgabe anstossen | gruen | Zeile 1130: `GOTO 1020` (kein Clear/Titel-Reprint), Endlosschleife bestaetigt |
 
 Zeilennummern-Reservierung: 1060 Pruefung, 1100 Erfolg, 1150 Fehler.
 
